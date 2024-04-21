@@ -7,7 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
   const [menuBtn, setMenuBtn] = useState(false);
-  const [mobileMenuBtn, setMobileMenuBtn] = useState(false);
+  // const [mobileMenuBtn, setMobileMenuBtn] = useState(false);
 
   //menuBtn click 함수
   function menuBtnClick() {
@@ -51,7 +51,7 @@ function Header() {
 
   //모바일 메뉴 슬라이드
   function mobileMenuClick() {
-    setMobileMenuBtn(!mobileMenuBtn);
+    // setMobileMenuBtn(!mobileMenuBtn);
     mobileMenuToggle();
   }
   function mobileMenuToggle() {

@@ -1,8 +1,13 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+// import Container from "@mui/material/Container";
+// import Grid from "@mui/material/Grid";
 import $ from "jquery";
+
+import Section01 from "./Section01";
+import Section02 from "./Section02";
+import Section03 from "./Section03";
+import Section04 from "./Section04";
 
 function Home() {
   window.addEventListener(
@@ -20,10 +25,10 @@ function Home() {
   $(window).on("wheel", function (e) {
     if (mHtml.is(":animated")) return;
     if (e.originalEvent.deltaY > 0) {
-      if (page == 4) return;
+      if (page === 4) return;
       page++;
     } else if (e.originalEvent.deltaY < 0) {
-      if (page == 1) return;
+      if (page === 1) return;
       page--;
     }
     var posTop = (page - 1) * $(window).height();
@@ -31,45 +36,16 @@ function Home() {
   });
   return (
     <>
-      <div className="section sec1">
-        <Container maxWidth="lg">
-          <Grid container>
-            <Grid item xs={12}>
-              <Box
-                sx={{
-                  border: 1,
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Section1
-              </Box>
-            </Grid>
-          </Grid>
-        </Container>
-      </div>
-      <div className="section sec2">
-        {" "}
-        <Container maxWidth="lg">
-          <Grid container>
-            <Grid item xs={12}>
-              <Box
-                sx={{
-                  border: 1,
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Section2
-              </Box>
-            </Grid>
-          </Grid>
-        </Container>
-      </div>
-      <div className="section sec3">section3</div>
-      <div className="section sec4">section4</div>
-      <div className="section sec5">section5</div>
-      <div className="body"></div>
+      <Section01></Section01>
+
+      <Section02></Section02>
+
+      <Section03></Section03>
+
+      <Section04></Section04>
+
+      <Box className="section sec5">section5</Box>
+      <Box className="body"></Box>
     </>
   );
 }
