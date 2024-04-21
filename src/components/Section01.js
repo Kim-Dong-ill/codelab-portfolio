@@ -11,10 +11,10 @@ function Section01() {
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} md={6}>
-                <Box className="bd">그림</Box>
+                <Box sx={{ border: 1 }}>그림</Box>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Box className="bd">글</Box>
+                <Box sx={{ border: 1 }}>글</Box>
               </Grid>
             </Grid>
           </Box>

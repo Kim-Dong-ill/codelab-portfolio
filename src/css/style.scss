@@ -119,9 +119,6 @@ html {
 .sec1 {
   border: 1px solid #000;
   @include dflex;
-  .bd {
-    border: 1px solid #000;
-  }
 }
 .sec2 {
   border: 1px solid #000;
@@ -132,6 +129,14 @@ html {
   @include dflex;
 }
 .sec4 {
+  border: 1px solid #000;
+  @include dflex;
+}
+.sec5 {
+  border: 1px solid #000;
+  @include dflex;
+}
+.sec6 {
   border: 1px solid #000;
   @include dflex;
 }
